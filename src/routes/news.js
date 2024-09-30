@@ -3,7 +3,7 @@ const route = express.Router();
 
 const newsController = require('../app/controllers/NewsController')
 
-route.use('/news-details', newsController.newsDetails);
-route.use('/', newsController.news);
+route.get('/news-details', newsController.newsDetails);
+route.get('/', newsController.news);
 
 module.exports = route;
