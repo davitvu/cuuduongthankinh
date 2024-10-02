@@ -10,6 +10,16 @@ class CourseController {
             })
             .catch(next);
     }
+
+    // [GET] => /course/create
+    create(req, res, next) {
+        res.render('courses/create');
+    }
+
+    // [POST] => /course/:tore
+    store(req, res, next) {
+        
+    }
 }
 
 module.exports = new CourseController;
